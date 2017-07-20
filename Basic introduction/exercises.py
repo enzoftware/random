@@ -54,3 +54,6 @@ print("Problem #3 : ")
 pi = 3.1416
 radius = float(input("Enter the radius of the circle : "))
 print(pi*radius**2)
+
+
+# more exercises link : http://interactivepython.org/runestone/static/thinkcspy/SimplePythonData/Exercises.html
