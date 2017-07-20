@@ -37,10 +37,11 @@ number2 = 16
 print(number1+number2)  # 136
 print(number1 - number2) # 104
 print(number1*number2) # 1920
-print(number1**number2) # 1848842588950364160000000000000000 aprox :D
+print(number1**number2) # 1848842588950364160000000000000000 aprox
 print(number1/number2) # 7.5
 print(number1//number2) # 7
 
+#The operator order is the same that in any language , basic math
 
 # UPDATING VARIABLES #
 
@@ -48,3 +49,12 @@ element = 1565
 element = element + 1 # 1566
 # element++ , doesn't work in python
 print(element)
+
+
+
+#INPUT DATA #
+
+#As simple as :
+
+x = input("Enter the X value : ")
+print(x)
