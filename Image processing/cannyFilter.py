@@ -2,11 +2,6 @@ import image
 import math
 import sys
 
-# Code adapted from http://www.cl.cam.ac.uk/projects/raspberrypi/tutorials/image-processing/edge_detection.html
-# Licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported License.
-
-# this algorithm takes some time for larger images - this increases the amount of time
-# the program is allowed to run before it times out
 #sys.setExecutionLimit(20000)
 
 img = image.Image("imagen.jpg")
