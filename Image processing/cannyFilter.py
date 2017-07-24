@@ -1,22 +1,22 @@
-import image
+from PIL import Image
 import math
 import sys
 
 #sys.setExecutionLimit(20000)
 
-img = image.Image("imagen.jpg")
-newimg = image.EmptyImage(img.getWidth(), img.getHeight())
-win = image.ImageWin()
+img = Image.open("imagen.png")
+width, height = img.size
+newimg = Image.new("RGB", (width, height), "white")
 
-for x in range(1, img.getWidth()-1):  # ignore the edge pixels for simplicity (1 to width-1)
-    for y in range(1, img.getHeight()-1): # ignore edge pixels for simplicity (1 to height-1)
+for x in range(1, width-1):  # ignore the edge pixels for simplicity (1 to width-1)
+    for y in range(1, height-1): # ignore edge pixels for simplicity (1 to height-1)
 
         # initialise Gx to 0 and Gy to 0 for every pixel
         Gx = 0
         Gy = 0
 
         # top left pixel
-        p = img.getPixel(x-1, y-1)
+        p = img.getpixel(x-1, y-1)
         r = p.getRed()
         g = p.getGreen()
         b = p.getBlue()
@@ -95,5 +95,5 @@ for x in range(1, img.getWidth()-1):  # ignore the edge pixels for simplicity (1
         newpixel = image.Pixel(length, length, length)
         newimg.setPixel(x, y, newpixel)
 
-newimg.draw(win)
+newimg.show(self)
 win.exitonclick()

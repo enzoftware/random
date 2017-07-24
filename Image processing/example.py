@@ -1,5 +1,6 @@
-from cImage import *
-img = FileImage("imagen.png")
+from PIL import Image
+img = Image.open("imagen.png")
+img.rotate(45).show()
 
 win = image.ImageWin(img.getWidth(),img.getHeight())
 img.draw(win)
