@@ -10,7 +10,6 @@ pncl = turtle.Turtle()
 
 printSquare(pncl,50)
 
-
 def drawSquare(t, sz):
     """Make turtle t draw a square of with side sz."""
 

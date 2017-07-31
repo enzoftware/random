@@ -30,7 +30,7 @@ print('p' in 'apple') #true
 print('i' in 'apple') #false
 print('ap' in 'apple') #true
 print('pa' in 'apple') #false
-print('x' not in 'apple') #true
+print('x' not in 'grape') #true
 
 
 def removeVowels(s):
@@ -42,3 +42,44 @@ def removeVowels(s):
     return sWithOutVowels
 
 print(removeVowels("hola")) # hl
+
+def count(text,aChar):
+    lettercount = 0
+    for c in text:
+        if c == aChar:
+            lettercount = lettercount + 1
+        return lettercount
+
+print(count("banana","a")) # 3
+
+
+def find(astring , achar):
+    ix = 0
+    found = False
+    while ix < len(astring) and not found:
+        if astring[ix] == achar:
+            found = True
+        else:
+            ix = ix + 1
+    if found :
+        return ix
+    else:
+        return -1
+
+print(find("enzoftware","o")) #3
+
+#OPTIONAL PARAMETERS
+
+def findOptional(astring , achar , start = 0): # start value is initialize with 0 , if it doesn't pass as a value in function asume as 0
+    ix = start
+    found = False
+    while ix < len(astring) and not found:
+        if astring[ix] == achar:
+            found = True
+        else:
+            ix = ix + 1
+    if found :
+        return ix
+    else:
+        return -1
+print(findOptional('banana', 'a'))
