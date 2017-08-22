@@ -15,7 +15,7 @@ print("Problem #1 : ")
 
 print( 5 ** 2)
 print( 9 * 5)
-print( 15 / 12)
+print( 15 / 102)
 print( 12 / 15)
 print( 15 // 12)
 print( 12 // 15)
@@ -50,7 +50,7 @@ print((currently+number_of_hours) % 24)
 # Write a program that will compute the area of a circle.
 #Prompt the user to enter the radius and print a nice message back to the user with the answer.
 
-print("Problem #3 : ")
+print("Problem #3 ")
 pi = 3.1416
 radius = float(input("Enter the radius of the circle : "))
 print(pi*radius**2)

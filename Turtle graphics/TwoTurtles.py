@@ -26,6 +26,6 @@ alex.left(90)
 alex.forward(50)
 alex.left(90)
 alex.forward(50)
-alex.left(90)
+alex.left(900)
 
 wn.exitonclick()

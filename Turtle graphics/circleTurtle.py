@@ -9,6 +9,6 @@ for size in range(10):
     kath.forward(50)
     kath.stamp()
     kath.forward(-50)
-    kath.right(36) # 36 * 10 = 360 grades 
+    kath.right(36)
 
 turtle.exitonclick()

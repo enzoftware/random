@@ -16,10 +16,10 @@ for x in range(1, width-1):  # ignore the edge pixels for simplicity (1 to width
         Gy = 0
 
         # top left pixel
-        p = img.getpixel(x-1, y-1)
-        r = p.getRed()
-        g = p.getGreen()
-        b = p.getBlue()
+        p = img.getpixel((x-1, y-1))
+        r = p[0]
+        g = p[1]
+        b = p[2]
 
         # intensity ranges from 0 to 765 (255 * 3)
         intensity = r + g + b
@@ -29,56 +29,56 @@ for x in range(1, width-1):  # ignore the edge pixels for simplicity (1 to width
         Gy += -intensity
 
         # remaining left column
-        p = img.getPixel(x-1, y)
-        r = p.getRed()
-        g = p.getGreen()
-        b = p.getBlue()
+        p = img.getpixel((x-1, y))
+        r = p[0]
+        g = p[1]
+        b = p[2]
 
         Gx += -2 * (r + g + b)
 
-        p = img.getPixel(x-1, y+1)
-        r = p.getRed()
-        g = p.getGreen()
-        b = p.getBlue()
+        p = img.getpixel((x-1, y+1))
+        r = p[0]
+        g = p[1]
+        b = p[2]
 
         Gx += -(r + g + b)
         Gy += (r + g + b)
 
         # middle pixels
-        p = img.getPixel(x, y-1)
-        r = p.getRed()
-        g = p.getGreen()
-        b = p.getBlue()
+        p = img.getpixel((x, y-1))
+        r = p[0]
+        g = p[1]
+        b = p[2]
 
         Gy += -2 * (r + g + b)
 
-        p = img.getPixel(x, y+1)
-        r = p.getRed()
-        g = p.getGreen()
-        b = p.getBlue()
+        p = img.getpixel((x, y+1))
+        r = p[0]
+        g = p[1]
+        b = p[2]
 
         Gy += 2 * (r + g + b)
 
         # right column
-        p = img.getPixel(x+1, y-1)
-        r = p.getRed()
-        g = p.getGreen()
-        b = p.getBlue()
+        p = img.getpixel((x+1, y-1))
+        r = p[0]
+        g = p[1]
+        b = p[2]
 
         Gx += (r + g + b)
         Gy += -(r + g + b)
 
-        p = img.getPixel(x+1, y)
-        r = p.getRed()
-        g = p.getGreen()
-        b = p.getBlue()
+        p = img.getpixel((x+1, y))
+        r = p[0]
+        g = p[1]
+        b = p[2]
 
         Gx += 2 * (r + g + b)
 
-        p = img.getPixel(x+1, y+1)
-        r = p.getRed()
-        g = p.getGreen()
-        b = p.getBlue()
+        p = img.getpixel((x+1, y+1))
+        r = p[0]
+        g = p[1]
+        b = p[2]
 
         Gx += (r + g + b)
         Gy += (r + g + b)

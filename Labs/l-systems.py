@@ -89,37 +89,37 @@ def createLSystem(num,axiom):
         endString = processString(startString)
         startString = endString
 
-    return endString
+        return endString
 
-def processString(olds):
-    newstr = ""
-    for ch in olds:
-        newstr = newstr + applyRules(ch)
-    return newstr
+        def processString(olds):
+            newstr = ""
+            for ch in olds:
+                newstr = newstr + applyRules(ch)
+                return newstr
 
-def applyRules(ch):
-    newstr = ""
-    if ch == 'F':
+                def applyRules(ch):
+                    newstr = ""
+                    if ch == 'F':
         newstr = 'F-F++F-F' # rule 1
     else:
         newstr = ch # no rules
 
-    return newstr
+        return newstr
 
 
-def drawLsystem(squirtle,ins,angle,distance):
-    for cmd in ins:
-        if cmd == 'F':
-            squirtle.forward(distance)
-        elif cmd == 'B':
-            squirtle.backward(distance)
-        elif cmd == '+':
-            squirtle.right(angle)
-        elif cmd == '-':
-            squirtle.left(angle)
+        def drawLsystem(squirtle,ins,angle,distance):
+            for cmd in ins:
+                if cmd == 'F':
+                    squirtle.forward(distance)
+                elif cmd == 'B':
+                    squirtle.backward(distance)
+                elif cmd == '+':
+                    squirtle.right(angle)
+                elif cmd == '-':
+                    squirtle.left(angle)
 
 
-def main():
+                    def main():
     inst = createLSystem(4,'F') #create string
     print(inst)
     t = turtle.Turtle()
