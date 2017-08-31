@@ -1,9 +1,10 @@
-![photo](https://www.tutorialspoint.com/python/images/python.jpg)
+<img src="https://www.tutorialspoint.com/python/images/python.jpg"/>
+---
 # How to run this files 
 #### The pre-requisist for all of this , is to have Python 3.x installed
 ## Note
 #### The only command that you have to write is : 
-```bash
+```ruby
 python3 name_of_the_file.py
 ```
 #### Obviusly in your directory file , that's in Linux
