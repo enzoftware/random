@@ -3,7 +3,7 @@
 #### The pre-requisist for all of this , is to have Python 3.x installed
 ## Note
 #### The only command that you have to write is : 
-```ruby
+```bash
 python3 name_of_the_file.py
 ```
 #### Obviusly in your directory file , that's in Linux
