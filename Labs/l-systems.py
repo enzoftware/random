@@ -100,10 +100,9 @@ def createLSystem(num,axiom):
                 def applyRules(ch):
                     newstr = ""
                     if ch == 'F':
-        newstr = 'F-F++F-F' # rule 1
-    else:
-        newstr = ch # no rules
-
+                        newstr = 'F-F++F-F' # rule 1
+                    else:
+                        newstr = ch # no rules
         return newstr
 
 
@@ -119,17 +118,17 @@ def createLSystem(num,axiom):
                     squirtle.left(angle)
 
 
-                    def main():
-    inst = createLSystem(4,'F') #create string
-    print(inst)
-    t = turtle.Turtle()
-    wn = turtle.Screen()
+        def main():
+            inst = createLSystem(4,'F') #create string
+            print(inst)
+            t = turtle.Turtle()
+            wn = turtle.Screen()
 
-    t.up()
-    t.back(200)
-    t.down()
-    t.speed(11)
-    drawLsystem(t,inst,60,5)
+            t.up()
+            t.back(200)
+            t.down()
+            t.speed(11)
+            drawLsystem(t,inst,60,5)
 
 
 
