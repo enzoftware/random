@@ -1,0 +1,42 @@
+<html>
+  <head>
+
+  </head>
+  <body>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.js"></script>
+    <div id="app">
+      <hello-world></hello-world>
+      <hello-world></hello-world>
+      <hello-world></hello-world>
+    </div>
+  </body>
+  <script type="text/javascript">
+
+    Vue.component('hello-world',{
+      template :
+                '<div>\
+                <h1>{{title}}</h1>\
+                <input v-model="name"></input>\
+                <p>{{name}}</p>\
+                <button v-on:click="greet"> Greet me! </button>\
+                </div>',
+      props : {
+        title : { type : String , default : "Title"}
+      },
+      data : function(){
+        return {
+          name : " "
+        }
+      },
+      methods : {
+        greet : function(){
+          alert("Hello world" + this.name);
+        }
+      }
+    });
+
+    var app = new Vue({
+      el : "#app"
+    });
+  </script>
+</html>
