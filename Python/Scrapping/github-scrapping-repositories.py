@@ -3,13 +3,13 @@ import requests
 
 __author__ = 'enzoftware'
 
-url_base = "https://github.com/enzoftware?" 
+url_base = "https://github.com/enzoftware?"
 extension = "tab=repositories"
 max_pages = 3
 
-counter = 0 
+counter = 0
 
-for i in range(1,max_pages):
+for i in range(1, max_pages):
 	if i > 1 :
 		url = url_base + "page="+ str(i) + "&" + extension
 	else:
@@ -45,11 +45,4 @@ for i in range(1,max_pages):
 					language)
 
 	else:
-		break	
-
-
-
- 				          
-
-
-    	
+		break
