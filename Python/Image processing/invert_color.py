@@ -1,5 +1,5 @@
 from PIL import Image
-path =  "peru.jpeg"
+path =  "Lenna.png"
 img = Image.open(path)
 width,height = img.size
 print (img.size)

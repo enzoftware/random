@@ -32,7 +32,7 @@ def convertBlackWhite(input_image):
 
 
 win = image.ImageWin()
-img = image.Image("luther.jpg")
+img = image.Image("Lenna.png")
 
 bw_img = convertBlackWhite(img)
 bw_img.draw(win)

@@ -4,7 +4,7 @@ import sys
 
 #sys.setExecutionLimit(20000)
 
-img = Image.open("imagen.png")
+img = Image.open("Lenna.png")
 width, height = img.size
 newimg = Image.new("RGB", (width, height), "white")
 

@@ -1,5 +1,5 @@
 from PIL import Image
-path = "peru.jpeg"
+path = "noise.png"
 img = Image.open(path)
 width,height = img.size
 print(img.size)
@@ -20,4 +20,3 @@ for i in range(1,width-1):
         members[9] = img.getpixel((i,j))
         members.sort()
         newImage.putpixel((i,j),members[4])
-        

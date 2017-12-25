@@ -1,5 +1,5 @@
 from PIL import Image
-img = Image.open("imagen.png")
+img = Image.open("Lenna.png")
 img.rotate(45).show()
 
 win = image.ImageWin(img.getWidth(),img.getHeight())
