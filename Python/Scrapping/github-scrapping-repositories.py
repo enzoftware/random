@@ -3,7 +3,9 @@ import requests
 
 __author__ = 'enzoftware'
 
-url_base = "https://github.com/enzoftware?"
+name = input('Enter github username:  ')
+
+url_base = "https://github.com/"+name+"?"
 extension = "tab=repositories"
 max_pages = 3
 
