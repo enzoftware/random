@@ -10,7 +10,7 @@ read branch
 
 git push origin $branch
 
-echo 'enzoftware'
+send 'enzoftware'
 nayakatari98
 
 read
