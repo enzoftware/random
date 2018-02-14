@@ -14,7 +14,7 @@
         android:orientation="vertical">
 
         <TextView
-            android:text="hello"
+            android:text="barcode info"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="bold"
@@ -25,6 +25,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
             android:text="Process"
             android:id="@+id/button"/>
         <ImageView
