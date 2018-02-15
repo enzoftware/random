@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">barcode-reader-example</string>
+    <string name="barcode">BARCODE INFO</string>
+    <string name="process">Process</string>
 </resources>
