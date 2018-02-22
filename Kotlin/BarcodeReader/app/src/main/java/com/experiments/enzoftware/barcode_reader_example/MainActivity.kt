@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val myBitmap : Bitmap = BitmapFactory.decodeResource(applicationContext.resources,R.drawable.barcode2)
+        val myBitmap : Bitmap = BitmapFactory.decodeResource(applicationContext.resources,R.drawable.barcodereal)
         imgview.setImageBitmap(myBitmap)
 
         button.setOnClickListener {
