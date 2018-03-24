@@ -16,8 +16,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-        val myBitmap : Bitmap = BitmapFactory.decodeResource(applicationContext.resources,R.drawable.barcodereal)
+        val myBitmap : Bitmap = BitmapFactory.decodeResource(applicationContext.resources,R.drawable.codig)
         imgview.setImageBitmap(myBitmap)
 
         button.setOnClickListener {
@@ -31,7 +30,7 @@ class MainActivity : AppCompatActivity() {
 
             val frame = Frame.Builder().setBitmap(myBitmap).build()
             val barcodeList : SparseArray<Barcode> = detector.detect(frame)
-            Log.i("barcode",barcodeList.valueAt(0).rawValue)
+            Log.i("barcode",barcodeList.size().toString())
             val thisCode = barcodeList.valueAt(0)
             txtContent.text = thisCode.rawValue
         }
