@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2700506D-A366-42DA-8B22-F701A68941D1}</ProjectGuid>
+    <ProjectGuid>{82A9C456-0322-4AE7-9432-1C1B369A8A3E}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>ChooseDinner</RootNamespace>
-    <AssemblyName>ChooseDinner</AssemblyName>
+    <RootNamespace>upc.order.presentation</RootNamespace>
+    <AssemblyName>upc.order.presentation</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -79,9 +79,16 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Interface\Interface.csproj">
-      <Project>{6b543db9-9adc-4db3-89c4-839f004588be}</Project>
-      <Name>Interface</Name>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\upc.order.business\upc.order.business.csproj">
+      <Project>{327c4165-add8-4775-a0b7-9955c33584f0}</Project>
+      <Name>upc.order.business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\upc.order.entities\upc.order.entities.csproj">
+      <Project>{aed4a38b-9c6f-4450-8ef6-b08b95390504}</Project>
+      <Name>upc.order.entities</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

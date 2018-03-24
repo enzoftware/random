@@ -8,5 +8,7 @@ namespace Interface
 {
     interface InterfaceController
     {
+        int getRandomNumber();
+        string calcDinner();
     }
 }

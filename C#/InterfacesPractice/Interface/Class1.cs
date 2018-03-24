@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace Interface
 {
-    public class Class1
+    public class CDinner
     {
+            
     }
+
+
 }
