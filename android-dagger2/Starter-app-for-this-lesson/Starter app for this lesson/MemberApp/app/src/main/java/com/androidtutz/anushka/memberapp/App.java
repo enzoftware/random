@@ -9,8 +9,6 @@ public class App extends Application{
 
 
     public static App getApp() {
-
-
         return app;
     }
 
@@ -18,19 +16,13 @@ public class App extends Application{
     @Override
     public void onCreate() {
         super.onCreate();
-
         app = this;
         memberAppComponent = DaggerMemberAppComponent.builder()
                 .memberDataModule(new MemberDataModule())
                 .build();
-
-
     }
 
-
     public MemberAppComponent getMemberAppComponent() {
-
-
         return this.memberAppComponent;
     }
 

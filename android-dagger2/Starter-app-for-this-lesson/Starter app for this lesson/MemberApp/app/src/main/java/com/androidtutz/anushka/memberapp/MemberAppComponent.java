@@ -10,6 +10,5 @@ import dagger.Component;
 @Singleton
 @Component(modules = MemberDataModule.class)
 public interface MemberAppComponent {
-
     void inject(MainActivity mainActivity);
 }

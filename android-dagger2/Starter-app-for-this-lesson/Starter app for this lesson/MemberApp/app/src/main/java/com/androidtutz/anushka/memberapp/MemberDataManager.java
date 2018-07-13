@@ -12,10 +12,8 @@ public class MemberDataManager {
     private ArrayList<Member> members = new ArrayList<>();
 
     public MemberDataManager() {
-
         populateData();
     }
-
 
     public String checkMemberStatus(String userInput) {
         memberStatus = "Access Denied";
@@ -27,7 +25,6 @@ public class MemberDataManager {
         return memberStatus;
     }
 
-
     private void populateData() {
 
         members.add(new Member("123", "Tom", "tom@gmail.com"));
@@ -38,6 +35,4 @@ public class MemberDataManager {
         members.add(new Member("602", "Sara", "sara@gmail.com"));
 
     }
-
-
 }

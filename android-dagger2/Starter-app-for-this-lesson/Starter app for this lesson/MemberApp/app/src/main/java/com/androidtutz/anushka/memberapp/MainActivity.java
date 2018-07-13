@@ -7,10 +7,15 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import javax.inject.Inject;
+
 public class MainActivity extends AppCompatActivity {
 
     private EditText memberId;
     private Button submitButton;
+
+    @Inject
+    MemberDataManager memberDataManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         memberId = (EditText) findViewById(R.id.etMemberId);
         submitButton = (Button) findViewById(R.id.btnSubmit);
 
+        App.getApp().getMemberAppComponent().inject(this);
 
         submitButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -31,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
                 } else {
 
                     String input = memberId.getText().toString();
-                    String result = new MemberDataManager().checkMemberStatus(input);
+                    String result = memberDataManager.checkMemberStatus(input);
                     Toast.makeText(getApplicationContext(), result, Toast.LENGTH_SHORT).show();
                 }
 
