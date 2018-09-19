@@ -51,3 +51,4 @@ DIAPOSITIVA 2 :
 DIAPOSITIVA 3  :
 	- qaw 10 pts. aprender todos los pasos.
 	
+[Git flow](https://danielkummer.github.io/git-flow-cheatsheet/)	
