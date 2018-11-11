@@ -1,0 +1,12 @@
+<resources>
+
+
+    <string name="app_name">FindTheDay</string>
+
+    <string name="enter">Enter your index number here</string>
+    <string name="view">View The Day</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
+
