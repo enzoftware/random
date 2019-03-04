@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">mapbox</string>
+    <string name="action_settings">Settings</string>
+    <string name="map_box_api_key">sk.eyJ1IjoiZW56b2Z0d2FyZSIsImEiOiJjanN0Y3VicnMwcTA0M3lvMXh6NzE5OHJ6In0.WgOGTSBfzbkZoQTSd1Jj_A</string>
+</resources>
